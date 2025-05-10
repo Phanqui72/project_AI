@@ -1,4 +1,38 @@
-Flow Free Solver & Benchmarker - Galaxy Edition
+#Flow Free Solver
+├── assets/         
+│   └── Chứa hình ảnh, âm thanh, icon, font,... dùng trong game
+
+│
+├── data/
+│   └── Dữ liệu liên quan đến trò chơi như: level, bản đồ, cấu hình JSON,...
+
+│
+├── docs/
+│   └── Tài liệu hướng dẫn sử dụng, sơ đồ kiến trúc, diagram, slides trình bày,...
+
+│
+├── report/
+│   └── Báo cáo cuối kỳ, bài viết phân tích, file nộp PDF/Word,...
+
+│
+├── src/
+│   ├── main.py         # File chạy chính để khởi động game
+│   └── ...             # Các module khác: nhân vật, màn chơi, xử lý va chạm,...
+
+│
+├── test/
+│   └── File test chức năng game (dùng unittest/pytest)
+
+│
+├── README.md
+│   └── File mô tả dự án (bạn đang đọc)
+
+│
+└── requirements.txt
+    └── Danh sách thư viện Python cần cài để chạy game
+
+
+
 Ứng dụng giải đố Flow Free  bằng Python với giao diện Tkinter, hỗ trợ nhiều thuật toán giải, tính năng benchmark và hiển thị biểu đồ so sánh hiệu suất.
 ## Giới thiệu
 Flow Free là một trò chơi giải đố logic, mục tiêu là kết nối các cặp điểm màu giống nhau trên một lưới ô vuông sao cho các đường đi không cắt nhau và lấp đầy toàn bộ lưới. Dự án này cung cấp một công cụ để:
@@ -32,7 +66,7 @@ Flow Free là một trò chơi giải đố logic, mục tiêu là kết nối c
 * Tùy chọn (để có đầy đủ tính năng):
     * matplotlib: Cho chức năng vẽ biểu đồ.
     * ortools: Cho thuật toán Constraint Programming (CP).
-```
+
 ## Hướng dẫn sử dụng (GUI)
 1. Chọn độ khó và puzzle từ menu.
 2. Chọn thuật toán và heuristic (nếu dùng A*).
@@ -75,3 +109,5 @@ Hoặc:
 * Thuật toán: solve_backtracking, solve_cp, solve_bfs, solve_astar
 * Dữ liệu puzzle mẫu: PUZZLES
 * GUI: FlowFreeApp với các phương thức khởi tạo, sự kiện, hiển thị, giải puzzle
+
+## Link github: https://github.com/phantrongphu123/project_AI
